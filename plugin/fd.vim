@@ -1,1 +1,1 @@
-command! -nargs=1 MyFd call fd#fdInVim()
+command! MyFd call fd#fdInVim()
