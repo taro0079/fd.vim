@@ -1,1 +1,1 @@
-command! -nargs=1 MyFd call fd#fdInVim(<q-args>)
+command! -nargs=1 MyFd call fd#fdInVim()
