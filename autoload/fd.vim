@@ -1,5 +1,6 @@
-function! fd#fdInVim(query) abort
-    let l:cmd = 'fd ' . a:query
+function! fd#fdInVim() abort
+    let user_input = input('Search Files>')
+    let l:cmd = 'fd ' . user_input
     let l:result = systemlist(l:cmd)
 
     if v:shell_error == 0 && !empty(l:result)
